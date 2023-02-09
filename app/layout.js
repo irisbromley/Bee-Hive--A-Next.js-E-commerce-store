@@ -1,4 +1,6 @@
+import './global.scss';
 import Link from 'next/link';
+import styles from './layout.module.scss';
 
 export default function RootLayout({ children }) {
   return (
@@ -7,13 +9,15 @@ export default function RootLayout({ children }) {
 
       <body>
         {' '}
-        <header>
+        <header className={styles.header}>
           <nav>
-            <Link href="/"> Home </Link>
-            <Link href="/products"> Products </Link>
+            <Link href="/products"> Honig und mehr </Link>
+
+            <Link href="/about"> Über uns </Link>
           </nav>
         </header>
-        This is above{children}this is below
+        {children}
+        <footer className={styles.footer}> Footer Copyrights Honey</footer>
       </body>
     </html>
   );
