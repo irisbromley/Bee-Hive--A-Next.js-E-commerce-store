@@ -1,3 +1,5 @@
+import Image from 'next/image.js';
+import { notFound } from 'next/navigation';
 import { products } from '../database/products.js';
 
 // {
@@ -13,10 +15,13 @@ import { products } from '../database/products.js';
 // { id: 7, productName: 'Honig Senf', type: 'other' },
 // { id: 8, productName: 'Moor Destillerie Moorbiene', type: 'other' },
 
-export default function ProductPage(props) {
+export default function ProductPage({ params }) {
   const singlePage = products.find((product) => {
-    return product.productName.toLowerCase() === props.params.productName;
+    return product.productName.toLowerCase() === params.productName;
   });
   console.log(singlePage);
+  if (!singlePage) {
+    notFound();
+  }
   return <h1>The single product page</h1>;
 }

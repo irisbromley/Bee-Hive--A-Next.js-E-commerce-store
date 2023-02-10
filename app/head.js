@@ -1,7 +1,7 @@
 export default function RootHead() {
   return (
     <>
-      <title> My home page</title>
+      <title> Bee Happy Honey</title>
       <meta name="description" content="This is my Home Page" />
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     </>
