@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { getAllProducts } from '../database/products';
 
 export default async function HomePage() {
@@ -16,7 +17,9 @@ export default async function HomePage() {
                 width="200"
                 height="200"
               />
-              {product.name}
+              <Link href={'/products/' + product.id.toString()}>
+                {product.name}
+              </Link>
             </li>
           );
         })}
