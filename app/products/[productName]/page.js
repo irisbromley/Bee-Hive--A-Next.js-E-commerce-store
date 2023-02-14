@@ -1,6 +1,9 @@
 import Image from 'next/image.js';
 import { notFound } from 'next/navigation';
-import { products } from '../database/products.js';
+import AddToCartButton from '../../AddToCartButton';
+import { products } from '../../database/products.js';
+
+// import styles from '../page.module.scss';
 
 // {
 //   id: 1,
@@ -15,6 +18,8 @@ import { products } from '../database/products.js';
 // { id: 7, productName: 'Honig Senf', type: 'other' },
 // { id: 8, productName: 'Moor Destillerie Moorbiene', type: 'other' },
 
+export const dynamic = 'force-dynamic';
+
 export default function ProductPage({ params }) {
   const singlePage = products.find((product) => {
     return product.productName.toLowerCase() === params.productName;
@@ -23,5 +28,11 @@ export default function ProductPage({ params }) {
   if (!singlePage) {
     notFound();
   }
-  return <h1>The single product page</h1>;
+  return (
+    <main>
+      <h1>The single product page</h1>
+      <Image />
+      <AddToCartButton />
+    </main>
+  );
 }
