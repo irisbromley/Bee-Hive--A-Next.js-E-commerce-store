@@ -1603,6 +1603,11 @@
     "expect" "^29.0.0"
     "pretty-format" "^29.0.0"
 
+"@types/js-cookie@^3.0.2":
+  "integrity" "sha512-6+0ekgfusHftJNYpihfkMu8BWdeHs9EOJuGcSofErjstGPfPGEu9yTu4t460lTzzAMl2cM5zngQJqPMHbbnvYA=="
+  "resolved" "https://registry.npmjs.org/@types/js-cookie/-/js-cookie-3.0.2.tgz"
+  "version" "3.0.2"
+
 "@types/jsdom@^20.0.0":
   "integrity" "sha512-d0r18sZPmMQr1eG35u12FZfhIXNrnsPU/g5wvRKCUf/tOGilKKwYMYGqh33BNR6ba+2gkHw1EUiHoN3mn7E5IQ=="
   "resolved" "https://registry.npmjs.org/@types/jsdom/-/jsdom-20.0.1.tgz"
@@ -4518,6 +4523,11 @@
     "@jest/types" "^29.4.2"
     "import-local" "^3.0.2"
     "jest-cli" "^29.4.2"
+
+"js-cookie@^3.0.1":
+  "integrity" "sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw=="
+  "resolved" "https://registry.npmjs.org/js-cookie/-/js-cookie-3.0.1.tgz"
+  "version" "3.0.1"
 
 "js-sdsl@^4.1.4":
   "integrity" "sha512-mifzlm2+5nZ+lEcLJMoBK0/IH/bDg8XnJfd/Wq6IP+xoCjLZsTOnV2QpxlVbX9bMnkl5PdEjNtBJ9Cj1NjifhQ=="
