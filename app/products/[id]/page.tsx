@@ -5,6 +5,8 @@ import AddToCartButton from '../../AddToCartButton';
 
 // import styles from '../page.module.scss';
 
+
+// 'force dynamic' is needed for the dynamic segments
 export const dynamic = 'force-dynamic';
 
 export default async function ProductPage({ params }: any) {
