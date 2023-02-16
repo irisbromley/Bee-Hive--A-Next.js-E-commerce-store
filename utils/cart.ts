@@ -1,3 +1,4 @@
+import { getProductById } from '../database/products';
 import { getParsedCookie, setStringifiedCookie } from './cookies';
 
 const cart: Array<{ id: number; quantity: number }> =
@@ -17,8 +18,21 @@ export function addItemToCart(id: number, quantity: number) {
   console.log('cart content', cart);
 }
 
-export function getCartContent() {
-  return;
+interface Cart {
+  lines: Array<{
+    quantity: number;
+    unitPrice: number;
+    productName: string;
+    productImage: string;
+    lineTotal: number;
+  }>;
+  total: number;
 }
 
-// if item ===cart.item !push to array but add quantity to item
+export async function getCartContent(): Promise<Cart> {
+  for (const item of cart) {
+    const result = await getProductById(item.id);
+    console.log(result);
+  }
+  return {} as any;
+}

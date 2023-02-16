@@ -4,6 +4,7 @@ export function getAllProducts() {
   return sql`SELECT * FROM products`;
 }
 
-export function getProductById(id: number) {
-  return sql`SELECT * FROM products WHERE id=${id}`;
+export async function getProductById(id: number) {
+  const result = await sql`SELECT * FROM products WHERE id=${id}`;
+  return result[0];
 }

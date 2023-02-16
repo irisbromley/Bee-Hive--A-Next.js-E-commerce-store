@@ -8,29 +8,28 @@ import { QuantityButtons } from './QuantityButtons';
 // import styles from '../page.module.scss';
 
 export default async function ProductPage({ params }: any) {
-  const result = await getProductById(params.id);
-  console.log(result);
-  if (result.length === 0) {
+  const product = await getProductById(params.id);
+  if (!product) {
     notFound();
   }
 
   return (
     <main>
       <div className={styles.productCard}>
-        <h1>{result[0]?.name}</h1>
+        <h1>{product.name}</h1>
         <Image
-          src={'/images/' + result[0]?.image}
-          alt={'image of' + result[0]?.name}
+          src={'/images/' + product.image}
+          alt={'image of' + product.name}
           height="200"
           width="200"
         />
-        <p> {result[0]?.description}</p>
+        <p> {product.description}</p>
         <div className={styles.priceAndButton}>
-          <p> &euro; {result[0]?.price / 100},-</p>
+          <p> &euro; {product.price / 100},-</p>
           <QuantityButtons />
           <AddToCartButton
             classname={styles.addToCartButton}
-            id={result[0]?.id}
+            id={product.id}
           />
         </div>
       </div>
