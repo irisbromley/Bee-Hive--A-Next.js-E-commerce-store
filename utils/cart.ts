@@ -4,9 +4,15 @@ const cart: Array<{ id: number; quantity: number }> =
   getParsedCookie('cart') ?? [];
 
 export function addItemToCart(id: number, quantity: number) {
-  console.log('addItemToCart', id, quantity);
-  const item = { id, quantity };
-  cart.push(item);
+  const existingItem = cart.find((item) => id === item.id);
+  if (existingItem) {
+    const newQuantity = quantity + existingItem.quantity;
+    existingItem.quantity = newQuantity;
+  } else {
+    const item = { id, quantity };
+    cart.push(item);
+  }
+
   setStringifiedCookie('cart', cart);
   console.log('cart content', cart);
 }
@@ -14,3 +20,5 @@ export function addItemToCart(id: number, quantity: number) {
 export function getCartContent() {
   return;
 }
+
+// if item ===cart.item !push to array but add quantity to item
