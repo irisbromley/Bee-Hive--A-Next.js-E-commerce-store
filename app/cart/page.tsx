@@ -1,5 +1,3 @@
-'use client';
-
 import { getCartContent } from '../../utils/cart';
 
 export default function CartPage() {
@@ -8,7 +6,7 @@ export default function CartPage() {
     <main>
       <p>Your Cart</p>
       <p>All your items in the Cart</p>
-
+      <button>Go to checkout</button>
     </main>
   );
 }

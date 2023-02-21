@@ -13,12 +13,10 @@ export default function RootLayout({ children }) {
         <CookieBanner />{' '}
         <header className={styles.header}>
           <nav>
-            <Link href="/about"> About us </Link>
-            <Link href="/contact"> Contact </Link>
             <Link href="/cart">
               {' '}
               <Image
-                className={styles.image}
+                className={styles.cartImage}
                 src="/images/shopping-bag.png"
                 alt="Shopping Cart"
                 width="40"

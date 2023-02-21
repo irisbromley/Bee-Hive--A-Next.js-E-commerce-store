@@ -18,6 +18,7 @@ export default async function ProductPage({ params }: any) {
       <div className={styles.productCard}>
         <h1>{product.name}</h1>
         <Image
+          data-test-id="product-image"
           src={'/images/' + product.image}
           alt={'image of' + product.name}
           height="200"
@@ -25,12 +26,10 @@ export default async function ProductPage({ params }: any) {
         />
         <p> {product.description}</p>
         <div className={styles.priceAndButton}>
+          {/* The product price (without any currency symbol or thousands separator) needs to be directly inside an element with the HTML attribute data-test-id="product-price" */}
           <p> &euro; {product.price / 100},-</p>
           <QuantityButtons />
-          <AddToCartButton
-            classname={styles.addToCartButton}
-            id={product.id}
-          />
+          <AddToCartButton classname={styles.addToCartButton} id={product.id} />
         </div>
       </div>
     </main>

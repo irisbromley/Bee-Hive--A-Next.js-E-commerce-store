@@ -14,7 +14,7 @@ export function addItemToCart(id: number, quantity: number) {
     cart.push(item);
   }
 
-  setStringifiedCookie('cart', cart);
+  setStringifiedCookie('cart', cart); // store this to getParsedCookie
   console.log('cart content', cart);
 }
 

@@ -1,11 +1,11 @@
 'use client';
-import { addItemToCart } from '../utils/cart';
 
 export default function AddToCartButton(props: any) {
   return (
     <button
+      data-test-id="product-add-to-cart"
       onClick={() => {
-        addItemToCart(props.id, 1);
+        console.log(props.id);
       }}
     >
       Add to cart

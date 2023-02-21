@@ -10,11 +10,17 @@ export default function ProductsPage() {
         {products.map((product) => {
           return (
             <div key={product.id}>
-              <Link href={`/products/${product.productName.toLowerCase()}`}>
+              <Link
+                href={`/products/${product.productName.toLowerCase()}`}
+                data-test-id="product-<product id>"
+              >
                 <h2>{product.productName}</h2>
               </Link>
 
-              <Link href={`/products/${product.productName}`}>
+              <Link
+                href={`/products/${product.productName}`}
+                data-test-id="product-<product id>"
+              >
                 <Image
                   src={`/images/${product.productName}.png`}
                   alt={product.productName}
