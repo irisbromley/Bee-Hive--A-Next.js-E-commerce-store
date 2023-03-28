@@ -1,3 +1,7 @@
+# Ecommerce Store
+
+This is an ecommerce store project that simulates an online shop, where you can perform CRUD operations on products, add them to cart, and make orders.
+
 ```sql
 -- This is the schema for the database ecommerce
 CREATE TABLE products (
