@@ -5,6 +5,10 @@ export function getAllProducts() {
 }
 
 export async function getProductById(id: number) {
-  const result = await sql`SELECT * FROM products WHERE id=${id}`;
+  const result = await sql <Product[]>`
+
+  SELECT * FROM
+  products
+  WHERE id=${id}`;
   return result[0];
 }

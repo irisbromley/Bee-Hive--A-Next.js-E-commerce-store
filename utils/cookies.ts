@@ -17,4 +17,3 @@ export function getParsedCookie(key: string) {
 export function setStringifiedCookie(key: string, value: any) {
   Cookies.set(key, JSON.stringify(value));
 }
-

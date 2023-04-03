@@ -24,14 +24,13 @@ export function QuantityButtons(props) {
               return itemInCookie.id === props.item.id;
             })
           ) {
-
             const foundItem = itemsInCookie.find((itemInCookie) => {
-            return itemInCookie.id === props.item.id;
-          });
+              return itemInCookie.id === props.item.id;
+            });
 
-          foundItem.quantity++;
+            foundItem.quantity++;
 
-          setStringifiedCookie()
+            setStringifiedCookie();
           }
         }}
       >

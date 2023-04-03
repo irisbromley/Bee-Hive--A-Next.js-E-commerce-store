@@ -9,7 +9,7 @@ export default function ProductsPage() {
       <main>
         {products.map((product) => {
           return (
-            <div key={product.id}>
+            <div key={`product ${product.id}`}>
               <Link
                 href={`/products/${product.productName.toLowerCase()}`}
                 data-test-id="product-<product id>"
