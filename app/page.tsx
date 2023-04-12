@@ -7,6 +7,7 @@ export default async function HomePage() {
   console.log(products);
   return (
     <main>
+      
       <ul>
         {products.map((product) => {
           return (

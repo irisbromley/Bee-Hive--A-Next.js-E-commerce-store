@@ -5,7 +5,7 @@ export function getAllProducts() {
 }
 
 export async function getProductById(id: number) {
-  const result = await sql <Product[]>`
+  const result = await sql`
 
   SELECT * FROM
   products

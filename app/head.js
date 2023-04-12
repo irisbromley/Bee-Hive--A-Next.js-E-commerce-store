@@ -3,7 +3,7 @@ export default function RootHead() {
     <>
       <title>Home Bee Happy Honey</title>
       <meta name="description" content="This is my Home Page" />
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+      <link rel="shortcut icon" href="" type="" />
     </>
   );
 }
