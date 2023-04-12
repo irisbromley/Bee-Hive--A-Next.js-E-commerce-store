@@ -5,6 +5,7 @@ import CookieBanner from './CookieBanner';
 import styles from './layout.module.scss';
 
 export const metadata = {
+  icons: '/',
   title: 'Bee Hive: Buzzing with Flavor',
   description:
     'Discover Bee Hive, the ecommerce store buzzing with flavor. Here, you can buy locally-sourced honey and help support our precious fauna and flora',
@@ -32,7 +33,10 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
         {children}
-        <footer className={styles.footer}> Footer Bee Happy Honey</footer>
+        <footer className={styles.footer}>
+          {' '}
+          Bee Hive: Buzzing with Flavor
+        </footer>
       </body>
     </html>
   );
