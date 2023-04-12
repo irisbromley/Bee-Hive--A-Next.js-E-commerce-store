@@ -4,6 +4,12 @@ import Link from 'next/link';
 import CookieBanner from './CookieBanner';
 import styles from './layout.module.scss';
 
+export const metadata = {
+  title: 'Bee Hive: Buzzing with Flavor',
+  description:
+    'Discover Bee Hive, the ecommerce store buzzing with flavor. Here, you can buy locally-sourced honey and help support our precious fauna and flora',
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
