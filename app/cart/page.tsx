@@ -2,7 +2,7 @@ import { getCartContent } from '../../utils/cart';
 
 export default function CartPage() {
   const cartObject = getCartContent();
-  console.log(cartObject);
+  console.log('cartobject', cartObject);
   return (
     <main>
       <p>Your Cart</p>

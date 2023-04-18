@@ -32,7 +32,7 @@ interface Cart {
 export async function getCartContent(): Promise<Cart> {
   for (const item of cart) {
     const result = await getProductById(item.id);
-    console.log(result);
+    console.log('result', result);
   }
   return {} as any;
 }

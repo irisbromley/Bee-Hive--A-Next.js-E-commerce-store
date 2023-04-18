@@ -16,10 +16,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head />
 
-      <body>
+      <body className={styles.body}>
         <CookieBanner />{' '}
         <header className={styles.header}>
           <nav>
+            <Link href="/cart">
+              {' '}
+              <Image
+                className={styles.cartImage}
+                src="/images/002-bee.png"
+                alt="Shopping Cart"
+                width="40"
+                height="40"
+              />
+            </Link>
             <Link href="/cart">
               {' '}
               <Image
@@ -56,16 +66,6 @@ export default function RootLayout({ children }) {
               title="amonrat rungreangfangsai"
             >
               amonrat rungreangfangsai
-            </a>{' '}
-            from{' '}
-            <a href="https://www.flaticon.com/" title="Flaticon">
-              www.flaticon.com
-            </a>
-          </div>
-          <div>
-            Icons made by{' '}
-            <a href="https://www.freepik.com" title="Freepik">
-              Freepik
             </a>{' '}
             from{' '}
             <a href="https://www.flaticon.com/" title="Flaticon">

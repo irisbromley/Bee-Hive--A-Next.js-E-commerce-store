@@ -5,7 +5,7 @@ export default function AddToCartButton(props: any) {
     <button
       data-test-id="product-add-to-cart"
       onClick={() => {
-        console.log(props.id);
+        console.log('props id', props.id);
       }}
     >
       Add to cart

@@ -14,7 +14,6 @@ export async function getProductById(id: number) {
       description: string;
     }[]
   >`
-
   SELECT * FROM
   products
   WHERE id=${id}`;

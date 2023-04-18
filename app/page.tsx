@@ -5,7 +5,7 @@ import styles from './page.module.scss';
 
 export default async function HomePage() {
   const products = await getAllProducts();
-  console.log(products);
+  console.log('products', products);
   return (
     <main>
       <div className={styles.flexgrid}>

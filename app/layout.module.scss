@@ -1,6 +1,6 @@
 .header {
   nav {
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 15px;
     display: flex;
 
@@ -19,6 +19,9 @@
   & .cartImage {
     text-align: end;
   }
+}
+.body {
+  height: 100%;
 }
 
 .footer {
