@@ -5,7 +5,7 @@ import CookieBanner from './CookieBanner';
 import styles from './layout.module.scss';
 
 export const metadata = {
-  icons: '/',
+  icons: '/favicon.ico',
   title: 'Bee Hive: Buzzing with Flavor',
   description:
     'Discover Bee Hive, the ecommerce store buzzing with flavor. Here, you can buy locally-sourced honey and help support our precious fauna and flora',
@@ -36,6 +36,42 @@ export default function RootLayout({ children }) {
         <footer className={styles.footer}>
           {' '}
           Bee Hive: Buzzing with Flavor
+          <div>
+            Icons made by{' '}
+            <a
+              href="https://www.flaticon.com/authors/smashicons"
+              title="Smashicons"
+            >
+              Smashicons
+            </a>{' '}
+            from{' '}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </a>
+          </div>
+          <div>
+            Icons made by{' '}
+            <a
+              href="https://www.flaticon.com/authors/amonrat-rungreangfangsai"
+              title="amonrat rungreangfangsai"
+            >
+              amonrat rungreangfangsai
+            </a>{' '}
+            from{' '}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </a>
+          </div>
+          <div>
+            Icons made by{' '}
+            <a href="https://www.freepik.com" title="Freepik">
+              Freepik
+            </a>{' '}
+            from{' '}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </a>
+          </div>
         </footer>
       </body>
     </html>
