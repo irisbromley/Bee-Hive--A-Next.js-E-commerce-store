@@ -8,8 +8,8 @@ export default async function HomePage() {
   console.log(products);
   return (
     <main>
-      <div className="flex-grid">
-        <div className="col">
+      <div className={styles.flexgrid}>
+        <div className={styles.col}>
           <ul>
             {products.map((product) => {
               return (
