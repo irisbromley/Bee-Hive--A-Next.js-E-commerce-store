@@ -20,16 +20,17 @@ export default function RootLayout({ children }) {
         <CookieBanner />{' '}
         <header className={styles.header}>
           <nav>
-            <Link href="/cart">
+            <Link href="/">
               {' '}
               <Image
                 className={styles.cartImage}
                 src="/images/002-bee.png"
-                alt="Shopping Cart"
+                alt="Bee"
                 width="40"
                 height="40"
               />
             </Link>
+            <div>Bee Hive - Buzzing with Flavor </div>
             <Link href="/cart">
               {' '}
               <Image

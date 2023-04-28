@@ -3,6 +3,7 @@
     margin: 10px 0;
     padding: 15px;
     display: flex;
+    justify-content: space-between;
 
     & a + a,
     span + a {
