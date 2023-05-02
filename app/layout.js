@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
               {' '}
               <Image
                 className={styles.cartImage}
-                src="/images/002-bee.png"
+                src="/images/003-apitherapy.png"
                 alt="Bee"
                 width="40"
                 height="40"
