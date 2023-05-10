@@ -30,7 +30,9 @@ export default function RootLayout({ children }) {
                 height="40"
               />
             </Link>
-            <div>Bee Hive - Buzzing with Flavor </div>
+            <div>
+              <p>Bee Hive</p>
+            </div>
             <Link href="/cart">
               {' '}
               <Image
