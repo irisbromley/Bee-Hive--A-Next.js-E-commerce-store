@@ -13,7 +13,7 @@ export default async function HomePage() {
           <ul>
             {products.map((product) => {
               return (
-                <li key={`product ${product.id}`}>
+                <li className={styles.card} key={`product ${product.id}`}>
                   <Image
                     src={'/images/' + product.image}
                     alt={product.name}
